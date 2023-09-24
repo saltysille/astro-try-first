@@ -3,12 +3,13 @@
 /* const header = Astro.props.header;
 const text = Astro.props.text ; */
 
-const {header, text} = Astro.props;
+const {header, soldOut} = Astro.props;
 ---
 
 <article>
     <h2> {header}</h2>
-    <p> {text}</p>
+   {soldOut && <p>Udsolgt </p>}
+    <p> Lorum larum</p>
     <button> Klik her </button>
 
     </article>
